@@ -1,6 +1,5 @@
-import React, { FunctionComponent } from "react";
+import React, { FormEvent, FunctionComponent } from "react";
 
-import { FormEvent } from "react";
 import styled from "styled-components";
 
 interface IEditorProps {
