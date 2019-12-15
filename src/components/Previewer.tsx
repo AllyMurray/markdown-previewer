@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 
 import marked from "marked";
 import styled from "styled-components";
@@ -15,7 +15,7 @@ const Preview = styled.div`
   width: 49%;
 `;
 
-const Previewer: React.FunctionComponent<IPreviewerProps> = props => {
+const Previewer: FunctionComponent<IPreviewerProps> = props => {
   return (
     <Preview
       id="preview"

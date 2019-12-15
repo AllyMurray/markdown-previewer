@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { FunctionComponent } from "react";
 
 import { FormEvent } from "react";
 import styled from "styled-components";
@@ -14,7 +14,7 @@ const TextArea = styled.textarea`
   width: 49%;
 `;
 
-const Editor: React.FunctionComponent<IEditorProps> = props => {
+const Editor: FunctionComponent<IEditorProps> = props => {
   return (
     <TextArea id="editor" onChange={props.onChange}>
       {props.value}

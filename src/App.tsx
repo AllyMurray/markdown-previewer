@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, FunctionComponent, useState } from "react";
 
 import Editor from "./components/Editor";
 import Previewer from "./components/Previewer";
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const App: React.FC = () => {
+const App: FunctionComponent = () => {
   const [markdown, setMarkdown] = useState(markdownPlaceholder);
 
   const handleEditorChange = (event: FormEvent<HTMLTextAreaElement>) => {
