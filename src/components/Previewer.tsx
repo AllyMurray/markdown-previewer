@@ -1,7 +1,8 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent } from 'react';
 
-import marked from "marked";
-import styled from "styled-components";
+import Tab from './Tab';
+import marked from 'marked';
+import styled from 'styled-components';
 
 interface IPreviewerProps {
   markdown: string;
@@ -10,17 +11,19 @@ interface IPreviewerProps {
 const Preview = styled.div`
   background-color: #fff;
   box-sizing: border-box;
+  height: 75vh;
   overflow-y: scroll;
-  padding: 1em;
-  width: 49%;
+  padding: 0 2em;
 `;
 
 const Previewer: FunctionComponent<IPreviewerProps> = props => {
   return (
-    <Preview
-      id="preview"
-      dangerouslySetInnerHTML={{ __html: marked(props.markdown) }}
-    />
+    <Tab name="Previewer">
+      <Preview
+        id="preview"
+        dangerouslySetInnerHTML={{ __html: marked(props.markdown) }}
+      />
+    </Tab>
   );
 };
 

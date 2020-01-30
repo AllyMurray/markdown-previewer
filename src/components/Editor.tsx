@@ -1,6 +1,7 @@
-import React, { FormEvent, FunctionComponent } from "react";
+import React, { FormEvent, FunctionComponent } from 'react';
 
-import styled from "styled-components";
+import Tab from './Tab';
+import styled from 'styled-components';
 
 interface IEditorProps {
   onChange: (event: FormEvent<HTMLTextAreaElement>) => void;
@@ -9,15 +10,20 @@ interface IEditorProps {
 
 const TextArea = styled.textarea`
   box-sizing: border-box;
-  padding: 1em;
-  width: 49%;
+  border: none;
+  height: 75vh;
+  margin: 0;
+  padding: 0.75em 2em 0;
+  resize: none;
 `;
 
 const Editor: FunctionComponent<IEditorProps> = props => {
   return (
-    <TextArea id="editor" onChange={props.onChange}>
-      {props.value}
-    </TextArea>
+    <Tab name="Editor">
+      <TextArea id="editor" onChange={props.onChange}>
+        {props.value}
+      </TextArea>
+    </Tab>
   );
 };
 
