@@ -11,6 +11,7 @@ const TabContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  height: 100%;
   margin: 16px 8px;
   min-width: 300px;
 

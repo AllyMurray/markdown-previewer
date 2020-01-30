@@ -11,7 +11,7 @@ interface IEditorProps {
 const TextArea = styled.textarea`
   box-sizing: border-box;
   border: none;
-  height: 75vh;
+  height: 100%;
   margin: 0;
   padding: 0.75em 2em 0;
   resize: none;

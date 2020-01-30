@@ -11,7 +11,6 @@ interface IPreviewerProps {
 const Preview = styled.div`
   background-color: #fff;
   box-sizing: border-box;
-  height: 75vh;
   overflow-y: scroll;
   padding: 0 2em;
 `;

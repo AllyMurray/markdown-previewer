@@ -6,15 +6,21 @@ import { markdownPlaceholder } from './data/markdownPlaceholder';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  background: #e0e0e0;
   box-sizing: border-box;
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
   @media (min-width: 768px) {
-    padding: 4em;
+    padding: 1em;
+  }
+
+  @media (min-width: 992px) {
+    overflow-y: hidden;
+    padding: 3em;
   }
 `;
 
