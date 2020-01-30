@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 992px) {
     overflow-y: hidden;
-    padding: 3em;
+    padding: 2em;
   }
 `;
 
