@@ -1,4 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Random Quote Machine
+
+This project was built as part of the [FreeCodeCamp curriculum](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer).
+
+https://allymurray.github.io/markdown-previewer
+
+## Objective
+
+Create a web app that allows a user to enter GitHub flavoured markdown in an editor and display a preview of the markdown as the user types. The editor should be preloaded with markdown when the app loads. See the [user stories](#user-stories) for more details.
+
+## Implementation details
+
+...
+
+## Built with
+
+- [React](https://reactjs.org)
+- [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Styled Components](https://styled-components.com)
+- [Marked](https://marked.js.org/#/README.md#README.md)
+
+## User stories
+
+1. I can see a textarea element with a corresponding id="editor".
+2. I can see an element with a corresponding id="preview".
+3. When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea.
+4. When I enter GitHub flavored markdown into the #editor element, the text is rendered as HTML in the #preview element as I type.
+5. When my markdown previewer first loads, the default text in the #editor field should contain valid markdown that represents at least one of each of the following elements: a header (H1 size), a sub header (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text.
+6. When my markdown previewer first loads, the default markdown in the #editor field should be rendered as HTML in the #preview element.
 
 ## Available Scripts
 
@@ -26,19 +54,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
